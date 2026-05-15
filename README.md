@@ -1,7 +1,8 @@
 # Hyun-Young Nam
+### Scientific Machine Learning | Computational Mechanics | AI-Driven Engineering
 
-- **Location**: Seoul, South Korea  
-- **Email**: hyun_young_nam@brown.edu  
+- **Location**: Seoul, South Korea
+- **Email**: hyun_young_nam@brown.edu
 
 ---
 
@@ -10,6 +11,14 @@
 **PhD student** in Engineering at Brown University (on leave), focusing on the convergence of **Artificial Intelligence** and **Engineering**. 
 
 Experienced in automating finite element simulation workflows. Through developing tools for programmatic model generation, I identified a critical bottleneck in Scientific Machine Learning (SciML): the difficulty of scaling diverse, physically-valid datasets using commercial solvers. Broadly, I aim to advance AI-driven engineering by integrating machine learning with traditional design principles. More specifically, I am focused on developing agentic frameworks-utilizing knowledge graphs and automated review loops-to bridge the gap between high-fidelity FEA and autonomous discovery in Scientific Machine Learning (SciML), including PINNs and Neural Operators.
+
+---
+
+## Research Areas
+
+**Scientific Machine Learning**: PINNs, Neural Operators (DeepONet, Transolver), Physics-Informed Training
+**Computational Mechanics**: FEM, Method of Finite Spheres, Explicit Dynamics, Fracture Mechanics
+**Autonomous Engineering**: Multi-Agent Systems, Agentic HPO, Knowledge Graphs, Automated FEM Pipelines
 
 ---
 
@@ -41,25 +50,37 @@ Experienced in automating finite element simulation workflows. Through developin
 
 ## Projects
 
-### X-PINN for Linear Crack Problems with Enhanced Tip Enrichment
+### PIANO: Physics-Informed Agentic Neural Operator
 
-An advanced Extended Physics-Informed Neural Networks (X-PINN) framework for modeling **linear crack problems** in linear elastic materials. This implementation leverages enhanced XFEM-inspired enrichment functions at crack tips combined with state-of-the-art training strategies to accurately capture crack tip stress singularities and displacement discontinuities.
+A self-improving surrogate framework for computational fracture mechanics. PIANO combines the **Transolver** neural operator with physics-informed losses and a **multi-agent HPO system** that autonomously diagnoses training issues, debates fixes, and proposes new configurations — without manual tuning.
 
 **Key Features**:
-- **Enhanced Crack Tip Enrichment**: Sophisticated enrichment elements at crack endpoints for stress concentration modeling
-- **Adaptive Residual-based Distribution (RAD)**: Intelligent collocation point sampling that focuses computational effort on high-error regions
-- **Two-Stage Optimization**: Adam + L-BFGS for superior convergence (30-40% reduction in global L2 error)
-- **Weighted Loss Components**: Balanced PDE, boundary, and initial conditions for improved accuracy
-- **Stress Concentration Modeling**: Enhanced von Mises stress computation with crack tip concentration factors
+- **Transolver Neural Operator**: Physics-Attention transformer for learning PDE solutions on unstructured meshes
+- **Multi-Agent HPO System**: LLM-based agents (Critic, Architect, Physicist) that diagnose and fix training issues autonomously
+- **Physics-Informed Losses**: Equilibrium residual, strain energy, traction-free BC, J-integral consistency
+- **Singularity-Aware Enrichment**: Polar coordinate features (r, log(r), θ/2 terms) for crack tip stress singularities
+- **Adaptive Learning**: Active learning with uncertainty-based acquisition for efficient data collection
 
-**Framework**: DeepXDE (PyTorch backend)  
-**GitHub**: [PINN_Crack_Propagation](https://github.com/hyunyoungnam/PINN_Crack_Propagation)  
+**Framework**: PyTorch, Transolver
+**GitHub**: [PIANO](https://github.com/hyunyoungnam/PIANO)  
+
+---
+
+## Research Contributions
+
+### Meshfree Methods for Explicit Dynamics
+Development of a novel mass lumping technique for the Method of Finite Spheres (MFS), enabling efficient explicit dynamic simulations without the preprocessing burden of traditional FEM.
+**Publication**: *Computers and Structures*, 2024 | [Paper](https://doi.org/10.1016/j.compstruc.2024.107296)
+
+### Agentic Scientific Machine Learning
+Design of multi-agent frameworks for autonomous hyperparameter optimization in neural operators, combining LLM-based agents with physics-informed losses for fracture mechanics surrogates.
+**Project**: [PIANO](https://github.com/hyunyoungnam/PIANO)
 
 ---
 
 ## Publications
 
-- Nam, H.-Y., "Explicit dynamics with the method of finite spheres using a modified direct inverse mass matrix," *Computers and Structures*, Vol. 295, 2024. `https://doi.org/10.1016/j.compstruc.2024.107296`
+- Nam, H.-Y., "Explicit dynamics with the method of finite spheres using a modified direct inverse mass matrix," *Computers and Structures*, Vol. 295, 2024. [DOI](https://doi.org/10.1016/j.compstruc.2024.107296)
 
 ### Method of Finite Spheres (MFS) - Key Concepts
 
@@ -74,3 +95,12 @@ An advanced Extended Physics-Informed Neural Networks (X-PINN) framework for mod
 <img src="images/mfs_vs_fem_mass_lumping.jpg" alt="Mass Lumping Comparison" width="300">
 
 *Mass lumping comparison between Standard FEM and Method of Finite Spheres (MFS). The diagram illustrates the diagonal mass matrix structure for both methods, showing how MFS uses multiple basis functions (Shepard function and Linear) per node, resulting in a larger but structured mass matrix (Nam et al., Computers & Structures, 2024).*
+
+---
+
+## Contact
+
+**Email**: hyun_young_nam@brown.edu
+**ORCID**: [0009-0001-7704-7240](https://orcid.org/0009-0001-7704-7240)
+**LinkedIn**: [linkedin.com/in/hyun-young-nam](https://www.linkedin.com/in/hyun-young-nam/)
+**Google Scholar**: [Google Scholar](https://scholar.google.com/citations?user=ap0HKkYAAAAJ&hl=en&oi=sra)
