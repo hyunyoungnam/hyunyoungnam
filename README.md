@@ -17,7 +17,9 @@ Experienced in automating finite element simulation workflows. Through developin
 ## Research Areas
 
 **Scientific Machine Learning**: PINNs, Neural Operators (DeepONet, Transolver), Physics-Informed Training
+
 **Computational Mechanics**: FEM, Method of Finite Spheres, Explicit Dynamics, Fracture Mechanics
+
 **Autonomous Engineering**: Multi-Agent Systems, Agentic HPO, Knowledge Graphs, Automated FEM Pipelines
 
 ---
