@@ -64,19 +64,7 @@ A self-improving surrogate framework for computational fracture mechanics. PIANO
 - **Adaptive Learning**: Active learning with uncertainty-based acquisition for efficient data collection
 
 **Framework**: PyTorch, Transolver
-**GitHub**: [PIANO](https://github.com/hyunyoungnam/PIANO)  
-
----
-
-## Research Contributions
-
-### Meshfree Methods for Explicit Dynamics
-Development of a novel mass lumping technique for the Method of Finite Spheres (MFS), enabling efficient explicit dynamic simulations without the preprocessing burden of traditional FEM.
-**Publication**: *Computers and Structures*, 2024 | [Paper](https://doi.org/10.1016/j.compstruc.2024.107296)
-
-### Agentic Scientific Machine Learning
-Design of multi-agent frameworks for autonomous hyperparameter optimization in neural operators, combining LLM-based agents with physics-informed losses for fracture mechanics surrogates.
-**Project**: [PIANO](https://github.com/hyunyoungnam/PIANO)
+**GitHub**: [PIANO](https://github.com/hyunyoungnam/Physics-Informed-Agentic-Neural-Operator)  
 
 ---
 
