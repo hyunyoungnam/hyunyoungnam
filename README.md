@@ -45,13 +45,15 @@ A self-improving Scientific Machine Learning project that explores how agentic A
 
 **GitHub**: [PIANO](https://github.com/hyunyoungnam/Physics-Informed-Agentic-Neural-Operator)
 
-### MECHANIST *(Private)*
+### Reinforcement Learning with Verifiable Mechanics (RLVM) *(Private)*
 
-A project training a mechanistic language model to understand computational solid mechanics.
+A project that tunes a mechanistic language model for computational solid mechanics with reinforcement learning. The reward signal comes from mechanics outcomes that can be checked by computation, so the model is trained toward answers that hold up under verification rather than answers that merely read well.
 
 ### ADAGIO-PHORTE *(Private)*
 
-A framework that organizes small language models into a multi-agent system to generate training data for fracture-mechanics research.
+**A**gentic **DA**ta **G**eneration, **I**terative evaluation, and **O**ptimization of **PH**ysics-guided neural **O**pe**R**ators for crack-driving-force es**T**imation and physics-based growth in**TE**gration.
+
+A harness built around locally served language models: the models propose simulation setups and solver code, while a deterministic pipeline meshes, solves, and physically verifies every result before it can enter a dataset. The problem it addresses is trust — producing validated crack-driving-force training data for neural operators in fracture mechanics (cracks in pressurized piping), where a plausible but wrong simulation is the main failure mode.
 
 ---
 
